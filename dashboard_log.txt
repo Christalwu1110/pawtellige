@@ -1,0 +1,6 @@
+Dash is running on http://0.0.0.0:8050/
+
+ * Serving Flask app 'dog_dashboard'
+ * Debug mode: off
+Address already in use
+Port 8050 is in use by another program. Either identify and stop that program, or start the server with a different port.

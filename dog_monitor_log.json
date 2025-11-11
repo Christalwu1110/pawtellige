@@ -1,0 +1,50 @@
+[
+  {
+    "frame": 0,
+    "path": "/home/yeling/dog_project/key_frames/frame_0.jpg",
+    "predicted_pose": "active",
+    "confidence": 0.27808883786201477,
+    "timestamp": "2025-09-11T15:23:29.357232",
+    "abnormal_flags": []
+  },
+  {
+    "frame": 10,
+    "path": "/home/yeling/dog_project/key_frames/frame_10.jpg",
+    "predicted_pose": "active",
+    "confidence": 0.2776392698287964,
+    "timestamp": "2025-09-11T15:23:29.690565",
+    "abnormal_flags": []
+  },
+  {
+    "frame": 20,
+    "path": "/home/yeling/dog_project/key_frames/frame_20.jpg",
+    "predicted_pose": "active",
+    "confidence": 0.2774772644042969,
+    "timestamp": "2025-09-11T15:23:30.023899",
+    "abnormal_flags": []
+  },
+  {
+    "frame": 30,
+    "path": "/home/yeling/dog_project/key_frames/frame_30.jpg",
+    "predicted_pose": "lying",
+    "confidence": 0.27940675616264343,
+    "timestamp": "2025-09-11T15:23:30.357232",
+    "abnormal_flags": []
+  },
+  {
+    "frame": 30,
+    "path": "/home/yeling/dog_project/key_frames/frame_30.jpg",
+    "predicted_pose": "lying",
+    "confidence": 0.27940675616264343,
+    "timestamp": "2025-09-11T15:23:30.357232",
+    "abnormal_flags": []
+  },
+  {
+    "frame": 40,
+    "path": "/home/yeling/dog_project/key_frames/frame_40.jpg",
+    "predicted_pose": "lying",
+    "confidence": 0.2792348861694336,
+    "timestamp": "2025-09-11T15:23:30.690565",
+    "abnormal_flags": []
+  }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "timestamp": "2025-07-22T21:25:20",
+        "predicted_pose": "standing",
+        "confidence": 0.5,
+        "abnormal_flags": [
+            "预测置信度低 (0.50)"
+        ]
+    },
+    {
+        "timestamp": "2025-07-28T12:18:37.135627",
+        "predicted_pose": "sitting",
+        "confidence": 0.95,
+        "abnormal_flags": []
+    },
+    {
+        "timestamp": "2025-07-28T12:18:37.137392",
+        "predicted_pose": "active",
+        "confidence": 0.88,
+        "abnormal_flags": []
+    },
+    {
+        "timestamp": "2025-07-28T12:18:37.137957",
+        "predicted_pose": "eating",
+        "confidence": 0.75,
+        "abnormal_flags": []
+    },
+    {
+        "timestamp": "2025-07-28T11:48:37.138608",
+        "predicted_pose": "lying",
+        "confidence": 0.92,
+        "abnormal_flags": []
+    },
+    {
+        "timestamp": "2025-07-28T12:03:37.139205",
+        "predicted_pose": "standing",
+        "confidence": 0.8,
+        "abnormal_flags": []
+    }
+]

@@ -1,0 +1,7 @@
+{
+    "eating": 0,
+    "lying": 1,
+    "active": 2,
+    "sitting": 3,
+    "standing": 4
+}

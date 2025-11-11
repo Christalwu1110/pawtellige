@@ -1,0 +1,184 @@
+/*
+ * style.css
+ * - This file contains all the styling for the Dog Behavior Monitoring Dashboard.
+ * - It now uses a local image file as the background, and applies a more pronounced
+ * white frosted glass effect to all dashboard modules.
+ */
+
+/* 1. Import Bootstrap Icons (the most reliable way) */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* 引入更适合标题的字体 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+/* 2. Global Reset and Image Background */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+/* Background Image Styling */
+body {
+    color: #e5e5e5;
+    font-size: 16px;
+    /* This line uses the image from the local assets folder */
+    background: url('/assets/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* --- New Class for Main Column Alignment --- */
+/* This ensures all columns in the main content area have the same height */
+.mainbox {
+    display: flex;
+    align-items: stretch;
+}
+
+
+/* 3. Top Header Bar Styling with Frosted Glass */
+.head-glass {
+    height: 70px;
+    padding: 0 20px;
+    /* 多层背景实现 iOS 风格磨砂玻璃效果 */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    
+    /* 多重阴影实现立体感和深度 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 0 5px 2px rgba(255, 255, 255, 0.2);
+
+    /* Vertical centering for header content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.white-tit {
+    font-size: 30px;
+    /* 标题字体和加粗 */
+    font-weight: 600;
+    font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    /* 添加平滑的过渡效果 */
+    transition: color 0.3s ease;
+}
+
+.white-tit.time {
+    font-size: 20px;
+}
+
+/* 4. Frosted Glass Container for Charts and Tables */
+.chart-box {
+    /* 多层背景实现 iOS 风格磨砂玻璃效果 */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    padding: 10px;
+    
+    /* 多重阴影实现立体感和深度 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 0 5px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* 5. Title container for chart modules, vertical icon-text layout */
+.box-tit-glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    margin-bottom: 10px;
+}
+
+/* 之前用于图标的样式已被移除 */
+
+.box-tit-glass .tit-text {
+    font-size: 1.2rem;
+    color: #fff;
+    /* 标题字体和加粗 */
+    font-weight: bold;
+    font-family: 'Montserrat', "Microsoft YaHei", Arial, sans-serif;
+    margin: 0;
+}
+
+/* 6. Frosted Glass KPI Card Styles */
+.kpi-glass-card {
+    /* 多层背景实现 iOS 风格磨砂玻璃效果 */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    text-align: center;
+    
+    /* 多重阴影实现立体感和深度 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.5), inset 0 0 5px 1px rgba(255, 255, 255, 0.2);
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.kpi-glass-card:hover {
+    transform: translateY(-5px);
+    
+    /* 悬停时加重阴影 */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), inset 0 0 5px 1px rgba(255, 255, 255, 0.3);
+}
+
+.kpi-label {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+.kpi-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* 7. Table Styling */
+.dash-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+.dash-table-container th {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #4ade80;
+    font-weight: bold;
+    padding: 8px;
+}
+.dash-table-container td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px;
+}
+.dash-table-container tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 8. Button Styling */
+.btn-primary {
+    background-color: #0054ff !important;
+    border-color: #0054ff !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* 9. Utility Classes */
+/* The float properties have been removed for a flexbox layout in the header */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
